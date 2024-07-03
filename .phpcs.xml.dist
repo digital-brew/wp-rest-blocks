@@ -24,13 +24,17 @@
 
 	</rule>
 
+	<rule ref="Squiz.Commenting.FileComment.Missing">
+		<exclude-pattern>tests</exclude-pattern>
+	</rule>
+
 	<rule ref="Squiz.Commenting.FunctionComment">
-		<exclude-pattern>test</exclude-pattern>
+		<exclude-pattern>tests</exclude-pattern>
 	</rule>
 
 	<rule ref="WordPress-Core">
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
-		<exclude name="WordPress.PHP.DisallowShortTernary" />
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
 	</rule>
 
 	<rule ref="WordPress-Docs">
@@ -43,10 +47,6 @@
 	</rule>
 
 	<rule ref="WordPress.Files.FileName.InvalidClassFileName">
-		<exclude-pattern>test</exclude-pattern>
-    </rule>
-
-    <rule ref="WordPress.WhiteSpace.PrecisionAlignment.Found">
 		<exclude-pattern>test</exclude-pattern>
     </rule>
 
